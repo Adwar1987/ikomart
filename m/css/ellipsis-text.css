@@ -1,0 +1,62 @@
+.message-ellipsis {
+    white-space: normal;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Ellipsis link */
+.ellipsis-wrapper {
+    min-height: 57px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-wrapper.auto-min-height {
+    min-height: auto;
+}
+
+.ellipsis-wrapper a {
+    white-space: normal;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* END Ellipsis link */
+
+.sw-product-featured-main .ellipsis-wrapper a {
+    -webkit-line-clamp: 1;
+}
+
+.promo-container .ellipsis-wrapper a {
+    -webkit-line-clamp: 2;
+}
+
+.expired-container .exp-date .ellipsis-wrapper {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.code-container .voucher-code .ellipsis-wrapper {
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.promo-container.promo-detail .ellipsis-wrapper a {
+    -webkit-line-clamp: inherit;
+}
+
+@media only screen and (max-width: 320px) {
+    .promo-container .ellipsis-wrapper a {
+        -webkit-line-clamp: 1;
+    }
+}
